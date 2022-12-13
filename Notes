@@ -1,0 +1,43 @@
+Write a React component from scratch:
+          class MyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+      render(){
+        return(
+            <div>
+
+            <h1>My First React Component!</h1>
+            
+            </div>
+
+        );
+      }
+};
+
+  ReactDOM.render(<MyComponent />, document.getElementById("challenge-node"));
+  
+  React interview questions: 
+  1. What is JSX?
+     A. JavaScript in XML, syntactic sugar for React elements
+      
+ 2. Why is class className?
+     A. class is a reserved JavaScript keyword but babel transpiles it
+     
+ 3. Describe dataflow in React?
+     A. Unidirectional. every component has a parent/child relationship. info is being passed down using props, states, etc.
+     
+ 4. How would you delay an API call until a component has mounted?
+     A. 1. componentDidMount() 2. use effect hook and pass an array.
+     
+     
+ 5. Should you use ternary or && operator to render react components?
+     A. Use Ternaries. && operator has issues like if length of something && something is 0, it is a falsey, rendors 0.
+     
+     
+     
+     
+     
+   
+      
+  
